@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Instagram login page</title>
+    <style>
+        body {
+            margin-top: 100px;
+            padding: 0px 0px 0px;
+            display: flex;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .div-phone-images {
+            border: 5px;
+            align-self: center;
+            margin-left: 500px;
+            background-image: url(/images/insta-image-of-phones.png);
+            background-position: 0 0;
+            background-size: 454px 618px;
+            flex-basis: 454px;
+            height: 618px;
+            position: relative;
+        }
+        
+        .phone-images {
+            height: 427px;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            visibility: hidden;
+            width: 240px;
+        }
+        
+        .insta-logo {
+            margin-top: 20px;
+        }
+        
+        .login {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .login-card {
+            height: 400px;
+            width: 350px;
+            border: 10px;
+            border-color: rgba(153, 153, 153, 0.5);
+            margin-bottom: 20px;
+            float: right;
+            background-color: white;
+            margin-bottom: 0px;
+            border: 2px solid #e6e6e6;
+        }
+        
+        .button {
+            background-color: #1877f2;
+            font-size: 20px;
+            padding: 0px 16px;
+            width: 85%;
+            height: 40px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            border-color: #1877f2;
+            cursor: pointer;
+            border-color: #fff;
+            border-style: solid;
+        }
+        
+        .fieldset-input {
+            border: 0px;
+        }
+        
+        .input {
+            background-color: #FAFAFA;
+            padding: 9px 0px 7px 8px;
+            border-radius: 3px;
+            padding: 14px 16px;
+            text-align: left;
+            width: 85%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            border-color: rgba(83, 82, 85, 0.507);
+            border-width: 1px;
+        }
+        
+        .via-facebook {
+            background-color: #fff;
+            border-color: #fff;
+            border-style: solid;
+            outline: none;
+            width: 85%;
+            margin-top: 10px;
+            margin-left: 30px;
+            border-color: white;
+            color: #385185;
+            font-size: 14px;
+            display: flex;
+            padding: 5px 0px 0px 40px;
+        }
+        
+        .button-pass {
+            color: #00376B;
+            font-size: 12px;
+            width: 60%;
+            margin: 12px 0px 0px 90px;
+            cursor: pointer;
+        }
+        
+        .registration {
+            color: #0095F6;
+            background-color: white;
+            border-color: white;
+            background-color: #fff;
+            border-color: #fff;
+            border-style: solid;
+            font-size: 14px;
+            width: 35px;
+            margin-top: -10px;
+            margin-left: 0px;
+        }
+        
+        .facebook-logo {
+            width: 30px;
+            margin: -5px 8px 0px 0px;
+        }
+        
+        .sub-content {
+            width: 350px;
+            height: 50px;
+            margin: 10px auto;
+            border: 2px solid #e6e6e6;
+            background-color: #fff;
+            float: left;
+        }
+        
+        .s-part {
+            font-size: 14px;
+            display: flex;
+            margin: 15px;
+            text-align: center;
+            font-weight: normal;
+        }
+        
+        .download {
+            width: 170px;
+            margin-left: 90px;
+        }
+        
+        .download-images {
+            cursor: pointer;
+        }
+        
+        .footer {
+            width: 1222px;
+            margin-left: -10px;
+            margin-top: 220px;
+            text-align: center;
+            background-color: white;
+            padding: 20px 200px 0px 500px;
+            height: 175px;
+            position: absolute;
+            bottom: 0;
+            align-items: center;
+        }
+        
+        .footer-lang a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-info {
+            width: 980px;
+            margin: 10px 0px 0px 10px;
+            font-size: 12px;
+            color: #848484;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+        }
+        
+        .footer-info a {
+            color: #848484;
+            display: inline-block;
+            margin: 6px 6px 0px 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-info p {
+            margin-top: 10px;
+            margin-left: 0px;
+            /* margin-bottom: 10px; */
+        }
+        
+        #gg:hover {
+            text-decoration: none;
+        }
+        
+        .select-button {
+            border: 0px;
+            width: 90px;
+            cursor: pointer;
+            color: #848484;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .or-line {
+            width: 70%;
+            text-align: center;
+            line-height: 1px;
+            margin: 10px 0 20px;
+            margin-left: 50px;
+            background-color: #DBDBDB;
+            font-weight: normal;
+        }
+        
+        .or {
+            background: #fff;
+            color: #8E8E8E;
+            font-size: 13px;
+            font-weight: normal;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px 18px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-phone-images">
+        <div class="phone-images">
+            <img class="phone-images" src="/images/insta_phone_image_1.jpg">
+            <img class="phone-images" src="/images/insta_phone_image_2.jpg">
+            <img class="phone-images" src="/images/insta_phone_image_3.jpg">
+            <img class="phone-images" src="/images/insta_phone_image_4.jpg">
+            <img class="phone-images" src="/images/insta_phone_image_5.jpg">
+            <img class="phone-images" src="/images/insta_phone_image_6.jpg">
+        </div>
+    </div>
+    <div class="login">
+        <div class="login-card">
+            <img src="images/instagram-logo.png_" alt="insta-logo" class="insta-logo">
+            <fieldset class="fieldset-input">
+                <input type="text" placeholder="Телефон, имя пользователя или эл. адрес" class="input">
+            </fieldset>
+            <fieldset class="fieldset-input">
+                <input type="password" placeholder="Пароль" class="input">
+            </fieldset>
+            <button class="button">Войти</button>
+            <h2 class="or-line"><span class="or">ИЛИ</span></h2>
+            <p>
+                <button class="button via-facebook"><img src="images/facebook-logo.png" class="facebook-logo">Войти через Facebook</button>
+            </p>
+            <button class="via-facebook button-pass">Забыли пароль?</button>
+
+        </div>
+        <div class="sub-content">
+            <div class="s-part">
+                У вас еще нет аккаунта?
+                <button class="button registration">Зарегестрироваться</button>
+            </div>
+        </div>
+        <div class="s-part download">
+            Установите приложение.
+        </div>
+        <div class="download-images">
+            <img src="images/app-store.png" alt="download in app store" width="150px">
+            <img src="images/google-play.png" alt="download in google play" width="150px">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-info">
+            <p>
+                <a href="">Meta</a>
+                <a href="">Информация</a>
+                <a href="">Блог</a>
+                <a href="">Вакансии</a>
+                <a href="">Помощь</a>
+                <a href="">API</a>
+                <a href="">Конфиденциальность</a>
+                <a href="">MУсловия</a>
+                <a href="">Популярные аккаунты</a>
+                <a href="">Хэштеги</a>
+                <a href="">Места</a>
+                <a href="">Instagram lite</a><br>
+                <a href="">Красота</a>
+                <a href="">Танцы</a>
+                <a href="">фитнес</a>
+                <a href="">Еда и напитки</a>
+                <a href="">Дом и сад</a>
+                <a href="">Музыка</a>
+                <a href="">Изобразительное искусство</a><br>
+                <select name="Изменить язык отображения" class="select-button">
+                        <option value="af">Afrikaans</option>
+                        <option value="cs">Čeština</option>
+                        <option value="da">Dansk</option>
+                        <option value="de">Deutsch</option>
+                        <option value="el">Ελληνικά</option>
+                        <option value="en">English</option>
+                        <option value="en-gb">English (UK)</option>
+                        <option value="es">Español (España)</option>
+                        <option value="es-la">Español</option>
+                        <option value="fi">Suomi</option>
+                        <option value="fr">Français</option>
+                        <option value="id">Bahasa Indonesia</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="ms">Bahasa Melayu</option>
+                        <option value="nb">Norsk</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="pl">Polski</option>
+                        <option value="pt-br">Português (Brasil)</option>
+                        <option value="pt">Português (Portugal)</option>
+                        <option value="ru">Русский</option>
+                        <option value="sv">Svenska</option>
+                        <option value="th">ภาษาไทย</option>
+                        <option value="tl">Filipino</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="zh-cn">中文(简体)</option>
+                        <option value="zh-tw">中文(台灣)</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="gu">ગુજરાતી</option>
+                        <option value="hi">हिन्दी</option>
+                        <option value="hr">Hrvatski</option>
+                        <option value="hu">Magyar</option>
+                        <option value="kn">ಕನ್ನಡ</option>
+                        <option value="ml">മലയാളം</option>
+                        <option value="mr">मराठी</option>
+                        <option value="ne">नेपाली</option>
+                        <option value="pa">ਪੰਜਾਬੀ</option>
+                        <option value="si">සිංහල</option>
+                        <option value="sk">Slovenčina</option>
+                        <option value="ta">தமிழ்</option>
+                        <option value="te">తెలుగు</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="zh-hk">中文(香港)</option>
+                        <option value="bg">Български</option>
+                        <option value="fr-ca">Français (Canada)</option>
+                        <option value="ro">Română</option>
+                        <option value="sr">Српски</option>
+                        <option value="uk">Українська</option>
+                        </select>
+                <a id="gg">©2022 Instagram from Meta</a>
+        </div>
+    </div>
+</body>
+
+</html>

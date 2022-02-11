@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook login page</title>
+    <style>
+        section {
+            display: flex;
+            float: left;
+        }
+        
+        .left {
+            margin-left: 100px;
+            margin-right: 80px;
+        }
+        
+        body {
+            @media only screen and (max-width: 900px) display: flex;
+            float: left;
+            text-align: center;
+            background-color: #F0F2F5;
+            margin: 0px 190px;
+            padding: 20px 0px;
+            width: 70%;
+        }
+        
+        .fb-logo {
+            margin: -28px;
+            width: 300px;
+        }
+        
+        .under-logo-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            color: #1C1E21;
+            padding: 0px 0px 20px;
+        }
+        
+        .div-description {
+            display: inline-block;
+            width: 480px;
+            text-align: left;
+            margin-top: 180px;
+            margin-left: 170px;
+        }
+        
+        .login-card {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 315px;
+            width: 400px;
+            box-shadow: 0px 5px 15px 0px rgba(153, 153, 153, 0.5);
+            margin-bottom: 20px;
+            float: right;
+            margin-top: 100px;
+            padding-top: 25px;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 100px;
+            background-color: white;
+            position: absolute;
+        }
+        
+        .under-card-description {
+            margin-top: 470px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            float: right;
+        }
+        
+        .input {
+            border-radius: 5px;
+            padding: 14px 16px;
+            text-align: left;
+            width: 85%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            border-color: rgba(83, 82, 85, 0.507);
+            border-width: 1px;
+        }
+        
+        .fieldset-input {
+            margin-bottom: 0px;
+            border: 0px;
+        }
+        
+        .button {
+            background-color: #1877f2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 0px 16px;
+            width: 85%;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-color: #1877f2;
+            cursor: pointer;
+            border-color: #fff;
+            border-style: solid;
+        }
+        
+        .button-pass {
+            color: #1877f2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            float: bottom;
+            background-color: white;
+            border: 0px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        
+        .line {
+            width: 85%;
+            margin-top: 20px;
+        }
+        
+        .new-acc {
+            width: 59%;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #42B72A;
+            padding: 10px 16px;
+            border-color: #42B72A;
+            cursor: pointer;
+            border-color: #fff;
+            border-style: solid;
+        }
+        
+        .footer {
+            width: 1340px;
+            margin-left: -210px;
+            margin-top: 220px;
+            text-align: left;
+            background-color: white;
+            padding: 20px 200px 0px 400px;
+            height: 190px;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .footer-lang {
+            width: 980px;
+            margin-left: 15px;
+            border-bottom: 1px solid #bbb8b898;
+            height: 40px;
+            line-height: 45px;
+            font-size: 12px;
+            color: #848484;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .footer-lang a {
+            color: #848484;
+            display: inline;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        
+        .footer-lang a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-info {
+            width: 980px;
+            margin: 10px 0px 0px 10px;
+            font-size: 12px;
+            color: #848484;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .footer-info a {
+            color: #848484;
+            display: inline-block;
+            margin: 6px 6px 0px 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-info p {
+            margin-top: 10px;
+            margin-left: 0px;
+            /* margin-bottom: 10px; */
+        }
+        
+        #gg:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="left">
+        <div class="div-description">
+
+</html><img class="fb-logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+<p class="under-logo-text">Facebook помогает вам всегда<br>оставаться на связи и общаться со<br>своими закомыми</p>
+</div>
+</section>
+<section class="right">
+    <div class="login-card">
+        <fieldset class="fieldset-input">
+            <input type="text" placeholder="Электронный адрес или номер телефона" autofocus="1" class="input">
+        </fieldset>
+        <fieldset class="fieldset-input">
+            <input type="password" placeholder="Пароль" class="input">
+        </fieldset>
+        <button class="button">Вход</button>
+        <button class="button-pass">Забыли пароль?</button>
+        <hr class="line">
+        <button class="button new-acc">Создать новый аккаунт</button>
+    </div>
+
+    <div>
+        <p class="under-card-description"><strong>Создать Старницу</strong> знаменитости, музыкальной группы или<br> компании.</p>
+    </div>
+
+</section>
+
+<div class="footer">
+    <div class="footer-lang">
+        English (UK) <a href="https://ru-ru.facebook.com/">  Русский  </a><a href="https://tr-tr.facebook.com/">  Türkçe  </a><a href="https://id-id.facebook.com/">  Bahasa Indonesia  </a>
+        <a href="https://zh-cn.facebook.com/">  中文(简体)  </a><a href="https://kk-kz.facebook.com/">  Қазақша  </a><a href="https://de-de.facebook.com/">  Deutsch  </a><a href="https://ko-kr.facebook.com/">  한국어  </a>
+        <a href="https://sq-al.facebook.com/">  Shqip  </a><a href="https://es-la.facebook.com/">  Español  </a><a href="https://pt-br.facebook.com/">  Português (Brasil)  </a><a><button>+</button></a>
+    </div>
+    <div class="footer-info">
+        <p>
+            <a href="">Sign Up</a>
+            <a href="">Log In</a>
+            <a href="">Messenger</a>
+            <a href="">Facebook Lite</a>
+            <a href="">Watch</a>
+            <a href="">Places</a>
+            <a href="">Games</a>
+            <a href="">Marketplace</a>
+            <a href="">Facebook pay</a>
+            <a href="">Oculus</a>
+            <a href="">Portal</a>
+            <a href="">Instagram</a>
+            <a href="">Bulletin</a>
+            <a href="">Local</a><br>
+            <a href="">Fundraisers</a>
+            <a href="">Services</a>
+            <a href="">Voting Information Center</a>
+            <a href="">Groups</a>
+            <a href="">About</a>
+            <a href="">Create Ad</a>
+            <a href="">Create Page</a>
+            <a href="">Developers</a>
+            <a href="">Careers</a>
+            <a href="">Privacy</a>
+            <a href="">Cookies</a>
+            <a href="">Ad choices></a>
+            <a href="">Terms</a><br>
+            <a href="">Help</a><br><br>
+            <a id="gg">Meta © 2022</a>
+    </div>
+</div>
+
+</body>
+
+</html>
